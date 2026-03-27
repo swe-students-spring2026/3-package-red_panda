@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # To activate this commit-msg hook, run the following commands from the main repository directory command shell:
-#   chmod a+x .githooks/commit-msg # make executable
+#   chmod a+x .githooks/commit-msg
 #   git config core.hooksPath ".githooks" # enable hook
 
 # Public: Current API version in format "x.y.z".
