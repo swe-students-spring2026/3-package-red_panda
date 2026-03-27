@@ -3,7 +3,7 @@ Unit tests for pipette module.
 """
 
 import pytest
-from pipette import pipette
+from sciencii.pipette import pipette
 
 
 # VALID INPUT TESTS
