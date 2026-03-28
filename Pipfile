@@ -6,9 +6,12 @@ name = "pypi"
 [packages]
 mendeleev = "*"
 pytest = "*"
-sciencii = {file = ".", editable = true}
-
-[dev-packages]
+sciencii = {editable = true, path = "."}
 
 [requires]
-python_version = "3.11"
+python_version = "3"
+
+[dev-packages]
+pytest = "*"
+build = "*"
+twine = "*"
