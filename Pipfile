@@ -4,13 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+mendeleev = "*"
+pytest = "*"
 sciencii = {editable = true, path = "."}
+
+[requires]
+python_version = "3"
 
 [dev-packages]
 pytest = "*"
 build = "*"
 twine = "*"
-
-
-[requires]
-python_version = "3"
