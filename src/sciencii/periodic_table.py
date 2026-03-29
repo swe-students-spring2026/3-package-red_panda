@@ -2,7 +2,7 @@ import mendeleev
 import sys
 from sciencii.periodic_art import elements
 
-def get_art(name):
+def get_element(name):
     #if atomic number, change it to name of element
     name = str(name)
     if name.replace("-", "").isdigit():
