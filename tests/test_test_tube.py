@@ -1,5 +1,5 @@
 import pytest
-from sciencii import test_tube
+from sciencii.test_tube import test_tube
 
 
 def test_test_tube_returns_string():
