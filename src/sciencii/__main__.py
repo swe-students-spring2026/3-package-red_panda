@@ -7,7 +7,7 @@ def main():
         print("You must input an element.")
     else:
         for i in range(1,arg_num):
-            periodic_table.get_art(sys.argv[i])
+            periodic_table.get_element(sys.argv[i])
 
 if __name__ == "__main__":
     main()
