@@ -1,6 +1,6 @@
 """Runnable demo of every sciencii function."""
 
-from sciencii import dna_helix, pipette, get_element, molecule_caption
+from sciencii import dna_helix, pipette, get_element, molecule_caption, test_tube
 
 # DNA Helix
 print("DNA Helix (2 cycles)\n")
@@ -21,3 +21,7 @@ print("Flask:", molecule_caption("H2O", "flask"), sep="\n")
 print("\nBeaker:", molecule_caption("NaCl", "beaker"), sep="\n")
 print("\nAtom:", molecule_caption("Fe", "atom"), sep="\n")
 print("\nBond:", molecule_caption("CO2", "bond"), sep="\n")
+
+# Test Tube
+print("\nTest Tube (75% full)\n")
+print(test_tube(75, "Sample A"))
