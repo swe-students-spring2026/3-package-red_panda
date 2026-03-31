@@ -2,7 +2,7 @@
 
 ![Build Status](https://github.com/swe-students-spring2026/3-package-red_panda/actions/workflows/build.yml/badge.svg)
 
-A Python package that generates science-themed ASCII art — DNA helices, pipettes, periodic table element cards, and molecule-style text captions.
+A Python package that generates science-themed ASCII art — DNA helices, pipettes, periodic table element cards, test tubes, and molecule-style text captions.
 
 **PyPI:** [https://pypi.org/project/sciencii/](https://pypi.org/project/sciencii/)
 
@@ -52,6 +52,31 @@ import sciencii.periodic_table as periodic_table
 periodic_table.get_element("He")
 periodic_table.get_element(79)
 periodic_table.get_element("table")
+```
+
+### `test_tube(fill_level, label)`
+
+Draws an ASCII test tube filled proportionally. `fill_level` is a number from 0 to 100 representing the percentage filled, and `label` is a string displayed below the tube.
+
+```python
+from sciencii import test_tube
+
+print(test_tube(75, "Sample A"))
+```
+
+```
+|   |
+|   |
+|   |
+|###|
+|###|
+|###|
+|###|
+|###|
+|###|
+|###|
+|___|
+Sample A
 ```
 
 ### `molecule_caption(text, style)`
