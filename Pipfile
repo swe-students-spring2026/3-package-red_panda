@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 mendeleev = "*"
 pytest = "*"
+numpy = "*"
 sciencii = {editable = true, path = "."}
 
 [requires]

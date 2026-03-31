@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sciencii"
-version = "0.1.0"
+version = "0.1.4"
 description = "ASCII art generator for science-themed visuals"
 authors = [
     {name = "Luca Andreani"},
@@ -13,7 +13,7 @@ authors = [
     {name = "Rohan Ahmad"},
     {name = "Ami Bal"}
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.9, <3.14"
 readme = "README.md"
 dependencies = ["mendeleev"]
 
