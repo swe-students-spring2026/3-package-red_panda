@@ -6,7 +6,15 @@ build-backend = "setuptools.build_meta"
 name = "sciencii"
 version = "0.1.0"
 description = "ASCII art generator for science-themed visuals"
+authors = [
+    {name = "Luca Andreani"},
+    {name = "Ethan Arnold"},
+    {name = "Lily Barchana Lorand"},
+    {name = "Rohan Ahmad"},
+    {name = "Ami Bal"}
+]
 requires-python = ">=3.9"
+readme = "README.md"
 dependencies = ["mendeleev"]
 
 [tool.setuptools.packages.find]
