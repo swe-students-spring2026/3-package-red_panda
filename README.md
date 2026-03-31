@@ -6,6 +6,14 @@ A Python package that generates science-themed ASCII art — DNA helices, pipett
 
 **PyPI:** [https://pypi.org/project/sciencii/](https://pypi.org/project/sciencii/)
 
+## Team
+
+- [Ami](https://github.com/asb9823)
+- [Ethan](https://github.com/ethanarnold)
+- [Lily](https://github.com/lilylorand)
+- [Luca](https://github.com/Landreani04)
+- [Rohan](https://github.com/ra4059)
+
 ## Installation
 
 ```bash
@@ -54,6 +62,19 @@ periodic_table.get_element(79)
 periodic_table.get_element("table")
 ```
 
+### `molecule_caption(text, style)`
+
+Draws text in a science-themed ASCII style. `style` can be `"flask"`, `"beaker"`, `"atom"`, or `"bond"`.
+
+```python
+from sciencii import molecule_caption
+
+print(molecule_caption("H2O", "flask"))
+print(molecule_caption("NaCl", "beaker"))
+print(molecule_caption("Fe", "atom"))
+print(molecule_caption("CO2", "bond"))
+```
+
 ### `test_tube(fill_level, label)`
 
 Draws an ASCII test tube filled proportionally. `fill_level` is a number from 0 to 100 representing the percentage filled, and `label` is a string displayed below the tube.
@@ -77,19 +98,6 @@ print(test_tube(75, "Sample A"))
 |###|
 |___|
 Sample A
-```
-
-### `molecule_caption(text, style)`
-
-Draws text in a science-themed ASCII style. `style` can be `"flask"`, `"beaker"`, `"atom"`, or `"bond"`.
-
-```python
-from sciencii import molecule_caption
-
-print(molecule_caption("H2O", "flask"))
-print(molecule_caption("NaCl", "beaker"))
-print(molecule_caption("Fe", "atom"))
-print(molecule_caption("CO2", "bond"))
 ```
 
 ## Example Program
@@ -127,11 +135,3 @@ pipenv run python -m build
 ### Environment variables
 
 No `.env` file or secret credentials are required to run or test this project.
-
-## Team
-
-- [Ami](https://github.com/asb9823)
-- [Ethan](https://github.com/ethanarnold)
-- [Lily](https://github.com/lilylorand)
-- [Luca](https://github.com/Landreani04)
-- [Rohan](https://github.com/ra4059)
