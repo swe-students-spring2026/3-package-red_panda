@@ -50,6 +50,39 @@ from sciencii.pipette import pipette
 print(pipette(5, 10))
 ```
 
+```
+        \   \-                                              
+         \   \                                              
+          \   \                                             
+           \   \                                            
+            \   \                                           
+             \   \-                                         
+              \   \                                         
+               \   \                                        
+                \   \                                       
+                 \   \                                      
+                  \~~~\-                                    
+                   \~~~\                                    
+                    \~~~\                                   
+                     \~~~\                                  
+                      \~~~\                                 
+                       \~~~\-                               
+                        \~~~\                               
+                         \~~~\                              
+                          \~~~\                             
+                           \~~~\                            
+                            \ \                             
+                             \ \                            
+                              \ \                           
+                               \                            
+                                \                           
+                                 \                          
+                                  \                         
+                                   o                        
+
+   5/10
+```
+
 ### `get_element(name)`
 
 Looks up an element by name, symbol, or atomic number and shows its ASCII art card. Pass `"table"` for the full periodic table.
@@ -58,21 +91,75 @@ Looks up an element by name, symbol, or atomic number and shows its ASCII art ca
 import sciencii.periodic_table as periodic_table
 
 periodic_table.get_element("He")
+```
+
+```
++------------+
+|  2         |
+|     He     |
+|   Helium   |
+|   4.0026   |
++------------+
+```
+
+```python
 periodic_table.get_element(79)
+```
+
+```
++------------+
+| 79         |
+|     Au     |
+|    Gold    |
+|   196.97   |
++------------+
+```
+
+```python
 periodic_table.get_element("table")
 ```
+
+Calling `periodic_table.get_element("table")` prints the full ASCII periodic table.
 
 ### `molecule_caption(text, style)`
 
 Draws text in a science-themed ASCII style. `style` can be `"flask"`, `"beaker"`, `"atom"`, or `"bond"`.
 
 ```python
-from sciencii import molecule_caption
+from sciencii.molecule_caption import molecule_caption
 
 print(molecule_caption("H2O", "flask"))
 print(molecule_caption("NaCl", "beaker"))
 print(molecule_caption("Fe", "atom"))
 print(molecule_caption("CO2", "bond"))
+```
+
+```
+   ||
+   ||
+  /  \
+ /    \
+/  H2O  \
++-------+
+```
+
+```
++--------+
+|        |)
+|  NaCl  |
+|        |
++--------+
+```
+
+```
+ .------.
+({  Fe  })
+ '------'
+  ~~~~~~
+```
+
+```
+[C]-[O]=[2]
 ```
 
 ### `test_tube(fill_level, label)`
